@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn {
+            border-radius: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: .8em;
+        }
+        
+        .del {
+            background-color: red;
+        }
+        
+        .add {
+            background-color: green;
+        }
+        
+        .change {
+            background-color: grey;
+        }
+        
+        #addId {
+            background-color: pink;
+        }
+        
+        * {
+            font-weight: bold;
+            padding: 0;
+            margin: 0;
+        }
+        
+        h1 strong {
+            color: red;
+        }
+        
+        .news h2 {
+            color: green
+        }
+        
+        .news p {
+            color: rgb(128, 0, 38)
+        }
+        
+        p .intro {
+            color: blue;
+        }
+        
+        body>p {
+            color: brown;
+        }
+        
+        strong>p {
+            color: blueviolet;
+        }
+        
+        p:only-child {
+            color: rgb(255, 208, 0);
+        }
+        #signupForm {
+            display: block;
+        }
+        .clasy {
+            color: red;
+        }
+        p:not(.clasy) {
+            color: rgb(0, 26, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <button>
+        <a href="#signupForm">Подпишитесь на нашу рассылку</a>
+        </button>
+        <form id="signupForm">
+        <label for="email">Укажите свой адрес электронной почты</label>
+        <input type="email" id="email">
+        <input class="btn" type="submit" value="Подписаться">
+        </form>
+    <button class="btn add" id="addId">Добавить</button>
+    <button class="btn del" id="delId">Удалить</button>
+    <button class="btn change" id="changeId">Изменить</button>
+    <h1>Потрясающий мир <strong>CSS</strong>!!!</h1>
+    <p class="clasy">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+        voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+        voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
+        modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit
+        qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+    <p><strong>ПРИМЕЧАНИЕ:</strong> Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? </p>
+    <h2>Кто знаком с мощью CSS?</h2>
+    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+        voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
+        modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit
+        qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+    <p><strong>ПРИМЕЧАНИЕ: <p>!!!!!!!!!</p></strong> Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? </p>
+    <h3>Не я!</h3>
+    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+        voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
+        modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit
+        qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+    <h3>Никто!</h3>
+    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+        voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
+        modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit
+        qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+    </article>
+    <div class="news">
+        <h2>Наша компания великолепна!</h2>
+        <p>Дополнительная информация о достижениях нашей компании</p>
+        <h2>Другая новость</h2>
+        <p>Текст
+            <p class="intro">другой</p> новости...</p>
+        <h2>...и т. д...</h2>
+        <p>...и т. д... </p>
+    </div>
+</body>
+<script>
+    const btnAdd = document.getElementById("addId");
+    let onButtonAddClick = () => {
+        alert("Нажата кнопка добавить");
+    }
+    btnAdd.addEventListener("click", onButtonAddClick);
+</script>
+
+</html>
