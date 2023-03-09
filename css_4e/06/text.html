@@ -1,16 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Типографика CSS</title>
-    <style>
-        @font-face {
+    <link href="http://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- <style>
+        /* @font-face {
             font-family: 'comfortaaregular';
             src: url('./css/fonts/comfortaa-variablefont_wght-webfont.woff2') format('woff2'), url('./css/fonts/comfortaa-variablefont_wght-webfont.woff') format('woff');
             font-weight: normal;
             font-style: normal;
-        }
+        } */
         
         p {
             font-family: comfortaaregular, sans-serif;
@@ -44,19 +46,39 @@
         /* .circle {
             list-style-type: circle;
         } */
-        
-        li:nth-of-type(even) {
+        /* li:nth-of-type(even) {
             list-style-type: circle;
             list-style-position: inside;
+        } */
+        
+        ul,
+        ol {
+            padding-left: 0;
+            margin-left: 0;
         }
-    </style>
+        
+        li {
+            margin-top: 10px;
+            margin-bottom: 15px;
+            /* list-style-image: url(images/bg_body.png); */
+        }
+        
+        ul li {
+            list-style-type: none;
+        }
+        
+        ul li:before {
+            content: counter(item, disc) " ";
+            color: red;
+        }
+    </style> -->
 </head>
 
 <body>
     <div class="main">
         <h1>Большая книга <strong>CSS</strong></h1>
         <h2>Обзор возможностей типографики</h2>
-        <p>31 октября <strong>Роман Дибров</strong></p>
+        <p class="byline">31 октября <strong>Роман Дибров</strong></p>
         <ul>
             <li>Lorem Ipsum</li>
             <li class="circle">Reprehenderit qui in ea</li>
@@ -66,13 +88,32 @@
             <li>Reprehenderit qui in ea</li>
         </ul>
         <h3>Esse quam nulla</h3>
-        <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? <em>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</em>            Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel
-            illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-        <h3>Quis autem vel eum</h3>
-        <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? <strong>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? </strong>Ut
-            enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum
-            qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+        <p>
+            Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+            <em>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse
+          quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
+          voluptas nulla pariatur?</em
+        >
+        Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+        suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis
+        autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
+        nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
+        voluptas nulla pariatur?
+      </p>
+      <h3>Quis autem vel eum</h3>
+      <p>
+        Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+        suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+        <strong
+          >Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse
+          quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
+          voluptas nulla pariatur? </strong
+        >Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+        suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis
+        autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
+        nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
+        voluptas nulla pariatur?
+      </p>
     </div>
-</body>
-
+  </body>
 </html>
