@@ -144,8 +144,13 @@ h1 {
 }
 
 p {
-    font: 1.6em/160% Georgia, "Times New Roman", Times, serif;
+    font: 1.5em 160% Georgia, "Times New Roman", Times, serif;
     margin: 10px 8px;
+    /* background-color: #FC0;
+    background: linear-gradient(to bottom, rgba(153, 0, 0, .5), #FC0, rgba(153, 0, 0, .5)); */
+    /* background-image: repeating-linear-gradient(45deg, #900 0, #900 3px, #FC0 10px, #FC0 20px); */
+    background-image: radial-gradient(red, blue);
+    background-image: radial-gradient(circle, red, blue);
 }
 
 .copyright {
