@@ -1,91 +1,303 @@
 /* сброс стилей браузера */
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	vertical-align: baseline;
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
 }
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-	display: block;
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1.2;
+    line-height: 1.2;
 }
-ol { 
-	padding-left: 1.4em;
-	list-style: decimal;
+
+ol {
+    padding-left: 1.4em;
+    list-style: decimal;
 }
+
 ul {
-	padding-left: 1.4em;
-	list-style: square;
+    padding-left: 1.4em;
+    list-style: square;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
-} 
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
 /* конец кода сброса стилей браузера */
 
 body {
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;	
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
 
 header {
-	background: rgb(255,214,94); 
-	background: linear-gradient(to bottom, rgb(100,100,100),rgb(0,0,0));  
-  padding-top: 20px;
+    background: rgb(255, 214, 94);
+    background: linear-gradient(to bottom, rgb(100, 100, 100), rgb(0, 0, 0));
+    padding-top: 20px;
 }
+
 .container {
-	width: 960px;
-	margin-right: auto;
-	margin-left: auto;
-	padding: 10px 0 30px 0;	
-	text-align: right;
-	position: relative;
+    width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px 0 30px 0;
+    text-align: right;
+    position: relative;
+    /* animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier();
+    animation-iteration-count: infinite; */
 }
 
 .logo {
-	position: absolute;
-	z-index: 100;
-	left: 0;	
+    position: absolute;
+    z-index: 100;
+    left: 0;
 }
+
 header h1 {
-	font-size: 2.2em;
-	margin: 0 0 10px 0;
-	color: rgb(255,255,255);
+    font-size: 2.2em;
+    margin: 0 0 10px 0;
+    color: rgb(255, 255, 255);
 }
 
 nav {
-	margin-left: 200px;	
+    margin-left: 200px;
 }
 
 nav li {
-	display: inline;
+    display: inline;
 }
 
-nav a {
-	display: inline-block;
-	text-decoration: none;
-	font-size: 1.2em;
-	color: #ffffff;
-	padding: 10px 20px;
-	background: #ff932d;
-	border-radius: 5px;
-	border: 1px solid #c95e00;
-	box-shadow: inset 0px 1px 0px rgba(255,255,255,0.7);
-	text-shadow:
-		0px -1px 1px rgba(000,000,000,0.2),
-		0px 1px 0px rgba(255,255,255,0.3);
-}
+
+/* nav a {
+    /* display: inline-block;
+    text-decoration: none;
+    /* font-size: 1.2em;
+    color: #ffffff;
+    padding: 10px 20px;
+    /* background: #ff932d; */
+
+
+/* border-radius: 5px;
+    border: 1px solid #c95e00;
+    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.7);
+    text-shadow: 0px -1px 1px rgba(000, 000, 000, 0.2), 0px 1px 0px rgba(255, 255, 255, 0.3);
+    transition: all .5s; 
+
+-webkit-transition: -webkit-transform .5s,
+background-color 1s ease-in .5s;
+transition: transform .5s,
+background-color 1s ease-in .5s;
+
+}*/
+
 
 /* пользовательские стили  */
 
+nav a:hover {
+    background-color: red;
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+@keyframes logo {
+    from {
+        -webkit-transform: rotate(0) scale(.5);
+        left: 120%;
+    }
+    50% {
+        -webkit-transform: rotate(-720deg) scale(1);
+        left: 0;
+    }
+    to {
+        -webkit-transform: rotate(0) scale(1);
+    }
+}
+
+@keyframes btn {
+    from {
+        -webkit-transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(1.5);
+    }
+    to {
+        -webkit-transform: scale(2);
+    }
+}
+
+.logo {
+    animation: logo 3s;
+}
+
+.button:hover {
+    animation: btn 2s;
+}
 
 
+/* nav ul:hover {
+    transform: rotate(10deg) scale(1.1);
+} */
 
 
+/* nav li {
+    font: .9em Arial, Helvetica, sans-serif;
+    border-radius: .5em;
+    background-color: rgb(34, 255, 23);
+    border: 1px solid rgba(0, 0, 0, .5);
+    padding: .5em;
+} */
 
 
+/* .button:hover {
+    transform: scale(-1, 1);
+} */
+
+
+/* .button:active {
+    -webkit-transform: translate(1px, 2px);
+    -ms-transform: translate(1px, 2px);
+    transform: translate (1px, 2px);
+    transform: skew(45deg, 4deg);
+    transform: skew(45deg, 0deg) scale(.5) translate(400px, 500px) rotate(90deg);
+}*/
+
+
+/* .navButton {
+    background-color: rgb(0, 255, 34);
+    transition-property: background-color;
+    transition-duration: 10s;
+    transition-timing-function: ease-in-out;
+}
+
+.navButton a:hover {
+    background-color: blue;
+} */
+
+
+/* .navButton {
+    color: black;
+    background-color: #FF6603;
+    border: 5px solid #660034;
+    transition-property: color, background-color, border-color;
+    transition-duration: 1s, 1s, .5s;
+    transition-delay: 0, 0, 1s;
+}
+
+.navButton:hover {
+    color: white;
+    background-color: #660034;
+    border-color: #FF6603;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.container:hover {
+    animation-play-state: paused;
+} */
