@@ -319,7 +319,7 @@ img.right {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 300px) {
     .columnWrapper,
     .main,
     .sidebar1,
